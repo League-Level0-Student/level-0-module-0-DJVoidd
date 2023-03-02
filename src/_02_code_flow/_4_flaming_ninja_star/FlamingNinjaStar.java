@@ -10,11 +10,12 @@ public class FlamingNinjaStar {
 		int flameSize = 130;		//the length of the flaming arms
 		
 		// Make a new robot, and set it's pen down.
-
+		Robot rob =new Robot();
+		rob.penDown();
 		// Set the robot speed to 100
-		
+		rob.setSpeed(100);
 		// Set the robot window size to 800 x 800
-
+rob.setWindowSize(800,800);
 		//  COUNT. Make another int variable to count how many times the loop has repeated
 		//         Set its start value to zero.
 		
