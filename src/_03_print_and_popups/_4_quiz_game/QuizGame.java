@@ -13,28 +13,39 @@ public class QuizGame {
 				if (q1.equals("yes")) {
 				// 3.  Use an if statement to check if their answer is correct
 				score +=1;
+				JOptionPane.showMessageDialog(null, "Congratulations, you got it right!");
 				}
 				// 4.  if the user's answer was correct, add one to their score 
 				else {
 					score-=1;
+					JOptionPane.showMessageDialog(null, "Oops, you got it wrong.");
 				}
 				String q2 = JOptionPane.showInputDialog("Am I cracked at Fortnite?");
 				if (q2.equals("no")) {
 					score+=1;
+					JOptionPane.showMessageDialog(null, "Congratulations, you got it right!");
 				}
 				else {
 					score-=1;
+					JOptionPane.showMessageDialog(null, "Oops, you got it wrong.");
 				}
 				String q3 = JOptionPane.showInputDialog("Is my name Daen?");
 				if (q3.equals("no")) {
 					score+=1;
+					JOptionPane.showMessageDialog(null, "Congratulations, you got it right!");
 				}
 				else {
 					score-=1;
+					JOptionPane.showMessageDialog(null, "Oops, you got it wrong.");
 				}
 		// MAKE MORE QUESTIONS. Ask more questions by repeating the above 
 				// Option: Subtract a point from their score for a wrong answer
-				JOptionPane.showMessageDialog(null, "Congratulations, your score is "+score+"!");
+				if (score > (0)) {
+				JOptionPane.showMessageDialog(null, "Congratulations, you passed! Your score is "+score);
+				}
+				else {
+					JOptionPane.showMessageDialog(null, "Oof, you failed. Your score is "+score);
+				}
 		
 		// After all the questions have been asked, tell the user their final score 
 		
