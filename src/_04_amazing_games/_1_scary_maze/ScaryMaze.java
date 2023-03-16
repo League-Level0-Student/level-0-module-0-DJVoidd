@@ -105,7 +105,7 @@ if (mouseColor == end) {
 		System.out.println("BOO!");
 		
 		if (canPlaySounds) {
-
+playScarySound("standardScarySound.wav");
 			/**********  PLAY A SOUND ***************/
 			//10. Find a scary sound and put it in the _04_amazing_games._1_scary_maze package (where you put your maze picture). 
 			//    You can find a sound on freesound.org. Log in as leagueofamazing/code4life.		
@@ -117,7 +117,7 @@ if (mouseColor == end) {
 
 		//12. Find a scary image and drop it into the _04_amazing_games._1_scary_maze package. 
 		//    Use the showScaryImage method below and send it the name of your picture file
-		
+		showScaryImage("Fearful Face Emoji.png");
 		
 	}
 	
